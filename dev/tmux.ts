@@ -47,7 +47,7 @@ const flagsOption: Fig.Option = {
   },
 };
 
-export const completion: Fig.Spec = {
+const completionSpec: Fig.Spec = {
   name: "tmux",
   description: "A terminal multiplexer",
   subcommands: [
@@ -2115,11 +2115,13 @@ export const completion: Fig.Spec = {
   ],
   additionalSuggestions: [
     {
-      name: "new -S 'name'",
+      name: "new -s 'name'",
       description: "Create a new session shortcut",
-      insertValue: "new -S '{cursor}'",
+      insertValue: "new -s '{cursor}'",
       icon: "fig://template?color=2ecc71&badge=🔥",
       // type: "shortcut",
     },
   ],
 };
+
+export default completionSpec;
