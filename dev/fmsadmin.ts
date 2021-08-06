@@ -94,7 +94,7 @@ const globalOpts: Fig.Option[] = [
     },
   },
 ];
-export const completion: Fig.Spec = {
+const completionSpec: Fig.Spec = {
   name: "fmsadmin",
   description: "",
   subcommands: [
@@ -808,3 +808,5 @@ export const completion: Fig.Spec = {
   ],
   args: {},
 };
+
+export default completionSpec;
